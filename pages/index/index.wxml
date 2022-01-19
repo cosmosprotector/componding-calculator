@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="page1">
+  <view class="body1">
+    <form bindsubmit="formSubmit1" bindreset="formReset1">
+      <!-- <switch bindchange="switch1Change" />是否计算税款 -->
+      <!-- <view wx:if="{{condition}}"> -->
+        <text>\n 计算税款后的年利率:</text>
+        <view class="input1">
+          <input name="input1" placeholder="month rate" type="number"/>
+        </view>
+      <!-- </view> -->
+
+      <text >\n</text>
+
+      <view >
+        <button form-type="submit" type="primary">计算</button>
+        <text >\n</text>
+
+        <button form-type="reset">重置</button>
+      </view>
+    </form>
+      <view class="body">
+	      <text >\n 年利率为{{year_rate1}}</text>
+      </view>
+  </view>
+</view>
+

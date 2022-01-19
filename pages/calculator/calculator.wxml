@@ -1,0 +1,26 @@
+<!--pages/calculator/calculator.wxml-->
+<view class='page'>
+
+  <view class="body">
+
+    <text >月利率</text>
+    <form bindsubmit="formSubmit1" bindreset="formReset1">
+      <view class="input">
+        <input name="input" placeholder="month rate" type="number"/>
+
+      </view>
+
+      <text >\n</text>
+      <view >
+        <button formType="submit" type="primary">计算</button>
+        <text>\n</text>
+
+		    <button formType="reset">重置</button>
+      </view>
+    </form>
+      <view class="body">
+	      <text >\n 年利率为{{year_rate}}</text>
+      </view>
+  </view>
+</view>
+

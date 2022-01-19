@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/calculator/calculator",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFD700",
+    "navigationBarTitleText": "复利计算器",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/calculator/calculator",
+      "text": "复利",
+      "iconPath": "pages/images/m1.jpeg",
+      "selectedIconPath": "pages/images/m1.jpeg"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "税务",
+      "iconPath": "pages/images/m1.jpeg",
+      "selectedIconPath": "pages/images/m1.jpeg"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

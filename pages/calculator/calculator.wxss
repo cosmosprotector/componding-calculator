@@ -1,0 +1,26 @@
+/* pages/calculator/calculator.wxss */
+
+.page{
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 47px;
+
+}
+
+.body{
+	font-size: 45px;
+	background-color: mintcream;
+}
+
+.input{
+	font-size: 30px;
+	background-color: lightgray;
+	height: 30px;
+}
+
+.foot{
+	font-size: 38px;
+	position:relative;
+	left:25%;
+}

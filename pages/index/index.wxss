@@ -1,0 +1,25 @@
+/**index.wxss**/
+.page{
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 47px;
+
+}
+
+.body1{
+	font-size: 30px;
+	background-color: mintcream;
+}
+
+.input1{
+	font-size: 24px;
+	background-color: lightgray;
+	height: 30px;
+}
+
+.foot{
+	font-size: 38px;
+	position:relative;
+	left:25%;
+}
