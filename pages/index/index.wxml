@@ -2,13 +2,25 @@
 <view class="page1">
   <view class="body1">
     <form bindsubmit="formSubmit1" bindreset="formReset1">
-      <!-- <switch bindchange="switch1Change" />是否计算税款 -->
-      <!-- <view wx:if="{{condition}}"> -->
-        <text>\n 计算税款后的年利率:</text>
+      <switch bindchange="switch1Change" />是否计算税款
+      <view wx:if="{{condition}}">
+        <text>\n 按月缴税请填0，按年缴税请填1 :</text>
         <view class="input1">
-          <input name="input1" placeholder="month rate" type="number"/>
+          <input name="rule" placeholder="0/1" type="number"/>
         </view>
-      <!-- </view> -->
+        <text>\n 请输入税率:</text>
+        <view class="input1">
+          <input name="input1" placeholder="tax rate" type="number"/>
+        </view>
+        <text>\n 请输入月收入:</text>
+        <view class="input1">
+          <input name="input2" placeholder="month income" type="number"/>
+        </view>
+        <text>\n 请输入月利率:</text>
+        <view class="input1">
+          <input name="input3" placeholder="month rate" type="number"/>
+        </view>
+      </view>
 
       <text >\n</text>
 
@@ -20,7 +32,7 @@
       </view>
     </form>
       <view class="body">
-	      <text >\n 年利率为{{year_rate1}}</text>
+	      <text >\n 年收入为{{year_rate1}}</text>
       </view>
   </view>
 </view>

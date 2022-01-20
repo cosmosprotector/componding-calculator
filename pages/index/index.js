@@ -15,13 +15,48 @@ switch1Change:function(e){
 
 // 计算处理函数
 formSubmit1:function(e){
-   var a =Number(e.detail.value.input1)//强制转为数值
-   var b =0
- 
-   b=(a+1)**12;
+   var a =Number(e.detail.value.input2)//强制转为数值
+   var b =Number(e.detail.value.input1)//强制转为数值
+   var c = 0
+   var d =Number(e.detail.value.input3)
+   var r =Number(e.detail.value.rule)
+   function fmonth(num){
+       if(num<1) return 0
+       if(num==1){
+           return a*(1-b)*(1+d)
+       }
+       else{
+           return (fmonth(num-1)+a*(1-b))*(1+d)
+       }
+
+   }
+
+   function fyear(num){
+       if(num<1) return 0;
+       if(num==1){
+           return a*(1+d)
+       }
+       else{
+        return (fyear(num-1)+a)*(1+d)
+    }
+   }
+    if(r==0){
+        c=fmonth(12);
+    }
+    else if(r==1){
+        c=fyear(12)-a*12*b
+    }
+    else{
+        wx.showToast({
+            title: '输入有误',
+            icon: 'input erro',
+            // duration: 2000
+          })
+    }
+   
 
    this.setData({
-       year_rate1:b.toFixed(2),
+       year_rate1:c.toFixed(2),
     })
 },
 // 重置函数
