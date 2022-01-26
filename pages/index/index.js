@@ -40,6 +40,9 @@ formSubmit1:function(e){
         return (fyear(num-1)+a)*(1+d)
     }
    }
+   
+   if(this.condition==true)
+   {
     if(r==0){
         c=fmonth(12);
     }
@@ -53,6 +56,10 @@ formSubmit1:function(e){
             // duration: 2000
           })
     }
+   }
+   else{
+       c=fyear(12)
+   }
    
 
    this.setData({

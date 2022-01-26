@@ -14,14 +14,14 @@
     "list": [{
       "pagePath": "pages/calculator/calculator",
       "text": "复利",
-      "iconPath": "pages/images/m1.jpeg",
-      "selectedIconPath": "pages/images/m1.jpeg"
+      "iconPath": "pages/images/money.jpeg",
+      "selectedIconPath": "pages/images/money.jpeg"
     },
     {
       "pagePath": "pages/index/index",
       "text": "税务",
-      "iconPath": "pages/images/m1.jpeg",
-      "selectedIconPath": "pages/images/m1.jpeg"
+      "iconPath": "pages/images/tax.jpeg",
+      "selectedIconPath": "pages/images/tax.jpeg"
     }
   ]
   },

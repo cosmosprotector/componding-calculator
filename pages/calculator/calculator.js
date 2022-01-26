@@ -5,7 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-        year_rate:'00',
+        year_rate:'',
         condition:false,
         
 

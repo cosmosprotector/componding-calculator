@@ -3,7 +3,7 @@
 
   <view class="body">
 
-    <text >月利率</text>
+    <text >月利率（请输入数字，而不是百分数）</text>
     <form bindsubmit="formSubmit1" bindreset="formReset1">
       <view class="input">
         <input name="input" placeholder="month rate" type="number"/>
